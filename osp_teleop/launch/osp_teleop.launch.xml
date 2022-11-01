@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="joy" exec="joy_node">
+    <param from="$(find-pkg-share osp_teleop)/config/osp_teleop.yaml" />
+  </node>
+</launch>
