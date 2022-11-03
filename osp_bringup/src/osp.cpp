@@ -27,35 +27,40 @@ void Osp::handle_joy(const sensor_msgs::msg::Joy::SharedPtr joy) {
   const float vx = joy->axes.at(1);
   const float va = joy->axes.at(3);
 
-  auto left_speed = vx * 2000.0 - va * 1000.0;
-  auto right_speed = vx * 2000.0 + va * 1000.0;
+  std_msgs::msg::Float32 left_speed;
+  std_msgs::msg::Float32 right_speed;
+  left_speed.set__data(vx * 2000.0 - va * 1000.0);
+  right_speed.set__data(vx * 2000.0 + va * 1000.0);
 
   crawler_left_pub->publish(left_speed);
   crawler_right_pub->publish(right_speed);
 
   // L1
-  const float flipper_speed = joy->axes.at(4) * 2.0;
+  std_msgs::msg::Float32 flipper_speed;
+  std_msgs::msg::Float32 speed_zero;
+  speed_zero.set__data(0.0);
+  flipper_speed.set__data(joy->axes.at(4) * 1.0);
   if (joy->buttons.at(4)) {
     flipper_left_front_pub->publish(flipper_speed);
   } else {
-    flipper_left_front_pub->publish(0.0);
+    flipper_left_front_pub->publish(speed_zero);
   }
   // R1
   if (joy->buttons.at(5)) {
     flipper_right_front_pub->publish(flipper_speed);
   } else {
-    flipper_right_front_pub->publish(0.0);
+    flipper_right_front_pub->publish(speed_zero);
   }
   // L2
   if (joy->buttons.at(6)) {
     flipper_left_back_pub->publish(flipper_speed);
   } else {
-    flipper_left_back_pub->publish(0.0);
+    flipper_left_back_pub->publish(speed_zero);
   }
   // R2
   if (joy->buttons.at(7)) {
     flipper_right_back_pub->publish(flipper_speed);
   } else {
-    flipper_right_back_pub->publish(0.0);
+    flipper_right_back_pub->publish(speed_zero);
   }
 }
