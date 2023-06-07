@@ -23,9 +23,6 @@ Flipper_visualize::Flipper_visualize() : Node("Flipper_angle"){ //constructor
      const auto angle_coefficient = this->get_parameter("angle_coefficient").as_double_array();
      const auto angle_offset = this->get_parameter("angle_offset").as_double_array();
 
-     // this->coefficients = angle_coefficient;
-     // this->offsets = angle_offset;
-
      Flipper flipper;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,6 +52,7 @@ Flipper_visualize::Flipper_visualize() : Node("Flipper_angle"){ //constructor
       joint_state.name.push_back(joint_name[i]);
     }
      joint_state.header.frame_id = frame_id;
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //determinate frequency of publish
     timer =
@@ -66,7 +64,6 @@ void Flipper_visualize::handle_pub_data() { //publisher
      for (auto&[id, flipper]: flippers) {
           joint_state.position.push_back(coefficients.at(id) *(flipper.angle + offsets.at(id)));
      }
-             //// joint_state.position = {-0.5*raw_angle[5],M_PI -0.5*raw_angle[3], -0.5*raw_angle[4], -0.5*raw_angle[2]};  // 関節位置を設定
          joint_state.header.stamp = this->now();
          joint_state_pub->publish(joint_state);
          joint_state.position.clear();

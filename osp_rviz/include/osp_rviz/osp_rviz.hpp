@@ -8,8 +8,10 @@
 
 namespace flipper_visualize{
   struct Flipper {
+
     uint16_t id;
     double angle;
+
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr angle_sub; //recieved angle
     std::vector<std::double_t> coefficient;
     std::vector<std::double_t> offset;
@@ -25,14 +27,13 @@ namespace flipper_visualize{
  
     void handle_pub_data();
     rclcpp::TimerBase::SharedPtr timer;
-
-    std::map<int64_t, Flipper> flippers;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_state_pub;   //angle will be sended to rviz
 
     sensor_msgs::msg::JointState joint_state;
 
+    std::map<int64_t, Flipper> flippers;
     std::map<int16_t,double_t> coefficients;
     std::map<int16_t,double_t> offsets;
     
-    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_state_pub;   //angle will be sended to rviz
   };
 } //namespace hogehoge
