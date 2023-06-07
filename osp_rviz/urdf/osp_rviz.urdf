@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="osp_rviz">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-3.69023833574921E-06 0.000135303198174048 0.00484123488485293"
+        rpy="0 0 0" />
+      <mass
+        value="15.8910309592199" />
+      <inertia
+        ixx="0.0613158294960087"
+        ixy="1.80957428706548E-07"
+        ixz="-6.43751720932636E-07"
+        iyy="0.181610840835921"
+        iyz="-4.36641485741092E-08"
+        izz="0.181013569345721" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="flipper_1">
+    <inertial>
+      <origin
+        xyz="0.10322 0.00053259 -0.0011031"
+        rpy="0 0 0" />
+      <mass
+        value="2.5754" />
+      <inertia
+        ixx="0.0025716"
+        ixy="-7.2101E-08"
+        ixz="0.00010166"
+        iyy="0.014521"
+        iyz="5.5498E-09"
+        izz="0.0123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f1"
+    type="continuous">
+    <origin
+      xyz="0.208 -0.2106 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="flipper_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="flipper_2">
+    <inertial>
+      <origin
+        xyz="-0.103171888196012 -0.000532593896165057 0.00328726586507427"
+        rpy="0 0 0" />
+      <mass
+        value="2.57539343377115" />
+      <inertia
+        ixx="0.00258050936304685"
+        ixy="-7.22720960557722E-08"
+        ixz="0.000312013925940737"
+        iyy="0.0145214072961414"
+        iyz="-2.47872263269941E-09"
+        izz="0.0122906615453118" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f2"
+    type="continuous">
+    <origin
+      xyz="-0.208 0.2106 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="flipper_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="flipper_3">
+    <inertial>
+      <origin
+        xyz="0.103218350486905 -0.000532593896164557 0.00110306552865433"
+        rpy="0 0 0" />
+      <mass
+        value="2.57539343377115" />
+      <inertia
+        ixx="0.00257155613346375"
+        ixy="7.21013126185279E-08"
+        ixz="-0.000101662716304273"
+        iyy="0.0145214072961415"
+        iyz="5.54983250278453E-09"
+        izz="0.0122996147748949" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f3"
+    type="continuous">
+    <origin
+      xyz="0.208 0.2106 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="flipper_3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="flipper_4">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://osp_rviz/meshes/flipper_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f4"
+    type="continuous">
+    <origin
+      xyz="-0.208 -0.210599999999999 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="flipper_4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
