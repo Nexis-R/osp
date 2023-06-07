@@ -7,6 +7,12 @@
     <param from="$(find-pkg-share osp_bringup)/config/osp_bringup.yaml" />
   </node>
 
+  <node pkg="rt_usb_9axisimu_driver" exec="rt_usb_9axisimu_driver">
+  </node>
+
+  <node pkg="imu_filter_madgwick" exec="imu_filter_madgwick_node">
+  </node>
+
   <node pkg="osp_bringup" exec="osp">
     <remap from="/command_crawler_left" to="/epos/motor1/move_with_velocity" />
     <remap from="/command_crawler_right" to="/epos/motor2/move_with_velocity" />
