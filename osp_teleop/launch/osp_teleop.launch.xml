@@ -4,11 +4,12 @@
   </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" exec="robot_state_publisher">
-    <param name="robot_description" value="$(command 'cat $(find-pkg-share osp_teleop)/urdf/osp_teleop.urdf')"/>
+    <param name="robot_description" value="$(command 'cat $(find-pkg-share osp_rviz)/urdf/osp_rviz.urdf')"/>
+    <param name="publish_frequency" value="100.0"/>
   </node>
 
-  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui">
-    <param name="robot_description" value="$(command 'cat $(find-pkg-share osp_teleop)/urdf/osp_teleop.urdf')"/>
+    <node name="Flipper_angle" pkg="osp_rviz" exec="osp_rviz">
+    <param from="$(find-pkg-share osp_teleop)/config/osp_teleop.yaml"/>
   </node>
 
   <node name="rviz2" pkg="rviz2" exec="rviz2">

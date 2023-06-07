@@ -1,3 +1,11 @@
 joy:
   ros__parameters:
     coalesce_interval_ms: 0.01
+Flipper_angle:
+  ros__parameters:
+    ids: [2, 3, 4, 5]
+    dataout_freq: 100
+    joint_name: ["f1", "f2", "f3", "f4"]
+    frame_id: "base_link"
+    angle_coefficient: [-0.5, 0.5, 0.5, -0.5]
+    angle_offset: [0.0, 0.0, 0.0, 0.0]
