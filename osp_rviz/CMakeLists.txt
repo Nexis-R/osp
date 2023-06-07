@@ -34,10 +34,6 @@ install(DIRECTORY
   meshes
   DESTINATION share/${PROJECT_NAME})
 
-install(DIRECTORY
-  config
-  DESTINATION share/${PROJECT_NAME})
-
 ament_auto_add_library(osplib SHARED
   include/osp_rviz/osp_rviz.hpp
   src/osp_rviz.cpp
