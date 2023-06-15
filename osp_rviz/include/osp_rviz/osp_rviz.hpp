@@ -36,4 +36,4 @@ namespace flipper_visualize{
     std::map<int16_t,double_t> offsets;
     
   };
-} //namespace hogehoge
+} //namespace flipper_visualize

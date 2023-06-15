@@ -4,8 +4,8 @@ joy:
 Flipper_angle:
   ros__parameters:
     ids: [2, 3, 4, 5]
-    dataout_freq: 100
+    dataout_freq: 10000
     joint_name: ["f1", "f2", "f3", "f4"]
     frame_id: "base_link"
     angle_coefficient: [-0.5, 0.5, 0.5, -0.5]
-    angle_offset: [0.0, 0.0, 0.0, 0.0]
+    angle_offset: [0.0, -3.14, 3.14, 0.0]
