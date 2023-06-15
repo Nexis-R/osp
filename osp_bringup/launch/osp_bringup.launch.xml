@@ -17,13 +17,17 @@
     <remap from="/command_crawler_left" to="/epos/motor1/move_with_velocity" />
     <remap from="/command_crawler_right" to="/epos/motor2/move_with_velocity" />
 
-    <remap from="/command_flipper_left_front" to="/dynamixel/motor2/command_velocity" />
-    <remap from="/command_flipper_right_front" to="/dynamixel/motor3/command_velocity" />
-    <remap from="/command_flipper_left_back" to="/dynamixel/motor4/command_velocity" />
+    <remap from="/command_flipper_left_front" to="/dynamixel/motor4/command_velocity" />
+    <remap from="/command_flipper_right_front" to="/dynamixel/motor2/command_velocity" />
+    <remap from="/command_flipper_left_back" to="/dynamixel/motor3/command_velocity" />
     <remap from="/command_flipper_right_back" to="/dynamixel/motor5/command_velocity" />
   </node>
+<<<<<<< Updated upstream
 
   <node name="usb_cam" pkg="usb_cam" exec="usb_cam_node_exe">
     <param from="$(find-pkg-share osp_bringup)/config/osp_bringup.yaml" />
   </node>
 </launch>
+=======
+</launch>
+>>>>>>> Stashed changes

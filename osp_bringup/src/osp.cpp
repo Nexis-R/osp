@@ -29,19 +29,21 @@ void Osp::handle_joy(const sensor_msgs::msg::Joy::SharedPtr joy) {
 
   std_msgs::msg::Float32 left_speed;
   std_msgs::msg::Float32 right_speed;
-  left_speed.set__data(vx * 2000.0 - va * 1000.0);
-  right_speed.set__data(vx * 2000.0 + va * 1000.0);
+  left_speed.set__data(vx * 4000.0 - va * 1500.0);
+  right_speed.set__data(-(vx * 4000.0 + va * 1500.0));
 
   crawler_left_pub->publish(left_speed);
   crawler_right_pub->publish(right_speed);
 
   // L1
   std_msgs::msg::Float32 flipper_speed;
+  std_msgs::msg::Float32 flipper_speed_flipped;
   std_msgs::msg::Float32 speed_zero;
   speed_zero.set__data(0.0);
   flipper_speed.set__data(joy->axes.at(4) * 1.0);
+  flipper_speed_flipped.set__data(joy->axes.at(4) * -1.0);
   if (joy->buttons.at(4)) {
-    flipper_left_front_pub->publish(flipper_speed);
+    flipper_left_front_pub->publish(flipper_speed_flipped);
   } else {
     flipper_left_front_pub->publish(speed_zero);
   }
@@ -59,7 +61,7 @@ void Osp::handle_joy(const sensor_msgs::msg::Joy::SharedPtr joy) {
   }
   // R2
   if (joy->buttons.at(7)) {
-    flipper_right_back_pub->publish(flipper_speed);
+    flipper_right_back_pub->publish(flipper_speed_flipped);
   } else {
     flipper_right_back_pub->publish(speed_zero);
   }
