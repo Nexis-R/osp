@@ -8,4 +8,4 @@ Flipper_angle:
     joint_name: ["f1", "f2", "f3", "f4"]
     frame_id: "base_link"
     angle_coefficient: [-0.5, 0.5, 0.5, -0.5]
-    angle_offset: [0.0, -3.14, 3.14, 0.0]
+    angle_offset: [0.0, 2.8, 3.14, 0.0]
