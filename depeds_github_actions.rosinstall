@@ -1,2 +1,0 @@
-- git: {local-name: epos, uri: https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@git@github.com:Nexis-R/epos, version: master}
-- git: {local-name: dynamixel_h54, uri: https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@git@github.com:Nexis-R/dynamixel_h54, version: master}
