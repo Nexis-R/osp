@@ -37,7 +37,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        vcs import --input depends.rosinstall --recursive src
+        vcs import --input depeds_github_actions.rosinstall --recursive src
 
     - name: Install ROS dependencies
       run: |
