@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: apt -y update
+      run: apt -y update && apt -y install ssh
       
     - name: Install vcs and additional dependencies
       run: apt -y install python3-vcstool curl
