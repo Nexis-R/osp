@@ -7,6 +7,8 @@
 
 # 環境構築
 ## 要件
+[![humble][humble-badge]][humble]
+[![ubuntu22][ubuntu22-badge]][ubuntu22]
 - Ubuntu22.04
 - ROS2 Humble
 
