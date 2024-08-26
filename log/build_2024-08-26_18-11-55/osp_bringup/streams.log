@@ -1,0 +1,52 @@
+[0.014s] Invoking command in '/home/hasegawa/osp/build/osp_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_bringup
+[0.154s] -- The C compiler identification is GNU 11.4.0
+[0.240s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.320s] -- Detecting C compiler ABI info - done
+[0.325s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.325s] -- Detecting C compile features
+[0.326s] -- Detecting C compile features - done
+[0.328s] -- Detecting CXX compiler ABI info
+[0.397s] -- Detecting CXX compiler ABI info - done
+[0.404s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.404s] -- Detecting CXX compile features
+[0.404s] -- Detecting CXX compile features - done
+[0.409s] -- Found ament_cmake_auto: 1.3.9 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.566s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.631s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.701s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.780s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.790s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.803s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.826s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.853s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.942s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.950s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.999s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.017s] -- Looking for pthread.h
+[1.092s] -- Looking for pthread.h - found
+[1.093s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.160s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.161s] -- Found Threads: TRUE  
+[1.292s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.384s] -- Found epos: 0.0.0 (/home/hasegawa/r5sr/install/epos/share/epos/cmake)
+[1.415s] [31mCMake Error at CMakeLists.txt:21 (find_package):
+[1.415s]   By not providing "Finddynamixel_h54.cmake" in CMAKE_MODULE_PATH this
+[1.415s]   project has asked CMake to find a package configuration file provided by
+[1.415s]   "dynamixel_h54", but CMake did not find one.
+[1.415s] 
+[1.415s]   Could not find a package configuration file provided by "dynamixel_h54"
+[1.415s]   with any of the following names:
+[1.415s] 
+[1.415s]     dynamixel_h54Config.cmake
+[1.415s]     dynamixel_h54-config.cmake
+[1.416s] 
+[1.416s]   Add the installation prefix of "dynamixel_h54" to CMAKE_PREFIX_PATH or set
+[1.416s]   "dynamixel_h54_DIR" to a directory containing one of the above files.  If
+[1.416s]   "dynamixel_h54" provides a separate development package or SDK, be sure it
+[1.416s]   has been installed.
+[1.416s] 
+[1.416s] [0m
+[1.416s] -- Configuring incomplete, errors occurred!
+[1.416s] See also "/home/hasegawa/osp/build/osp_bringup/CMakeFiles/CMakeOutput.log".
+[1.421s] Invoked command in '/home/hasegawa/osp/build/osp_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_bringup

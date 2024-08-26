@@ -1,0 +1,244 @@
+[0.233s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.233s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74948fe98e50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74948ff99bd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74948ff99bd0>>, mixin_verb=('build',))
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.448s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hasegawa/osp'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['ignore', 'ignore_ament_install']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'ignore'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'ignore_ament_install'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['colcon_pkg']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'ros'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['cmake', 'python']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'cmake'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'python'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extensions ['python_setup_py']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive) by extension 'python_setup_py'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extension 'ignore'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extension 'ignore_ament_install'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extensions ['colcon_pkg']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_bringup) by extension 'ros'
+[0.461s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osp_naive/osp_bringup' with type 'ros.ament_cmake' and name 'osp_bringup'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_naive) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osp_naive/osp_naive' with type 'ros.ament_cmake' and name 'osp_naive'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/osp_naive/osp_teleop) by extension 'ros'
+[0.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osp_naive/osp_teleop' with type 'ros.ament_cmake' and name 'osp_teleop'
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.491s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 20 installed packages in /home/hasegawa/giant/install
+[0.492s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 18 installed packages in /home/hasegawa/spider/install
+[0.493s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 30 installed packages in /home/hasegawa/r5sr/install
+[0.495s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 456 installed packages in /opt/ros/humble
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_target' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.584s] Level 5:colcon.colcon_core.verb:set package 'osp_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.584s] DEBUG:colcon.colcon_core.verb:Building package 'osp_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hasegawa/osp/build/osp_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hasegawa/osp/install/osp_bringup', 'merge_install': False, 'path': '/home/hasegawa/osp/src/osp_naive/osp_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_target' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.585s] DEBUG:colcon.colcon_core.verb:Building package 'osp_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hasegawa/osp/build/osp_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hasegawa/osp/install/osp_teleop', 'merge_install': False, 'path': '/home/hasegawa/osp/src/osp_naive/osp_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_target' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_clean_cache' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_clean_first' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'cmake_force_configure' from command line to 'False'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'ament_cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'catkin_cmake_args' from command line to 'None'
+[0.585s] Level 5:colcon.colcon_core.verb:set package 'osp_naive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.585s] DEBUG:colcon.colcon_core.verb:Building package 'osp_naive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hasegawa/osp/build/osp_naive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hasegawa/osp/install/osp_naive', 'merge_install': False, 'path': '/home/hasegawa/osp/src/osp_naive/osp_naive', 'symlink_install': True, 'test_result_base': None}
+[0.585s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hasegawa/osp/src/osp_naive/osp_bringup' with build type 'ament_cmake'
+[0.586s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hasegawa/osp/src/osp_naive/osp_bringup'
+[0.590s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.594s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hasegawa/osp/src/osp_naive/osp_teleop' with build type 'ament_cmake'
+[0.595s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hasegawa/osp/src/osp_naive/osp_teleop'
+[0.595s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hasegawa/osp/build/osp_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_bringup
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hasegawa/osp/build/osp_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_teleop
+[1.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hasegawa/osp/build/osp_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_teleop
+[1.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hasegawa/osp/build/osp_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake --build /home/hasegawa/osp/build/osp_teleop -- -j20 -l20
+[1.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hasegawa/osp/build/osp_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake --build /home/hasegawa/osp/build/osp_teleop -- -j20 -l20
+[1.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hasegawa/osp/build/osp_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake --install /home/hasegawa/osp/build/osp_teleop
+[1.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(osp_teleop)
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hasegawa/osp/build/osp_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake --install /home/hasegawa/osp/build/osp_teleop
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop' for CMake module files
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop' for CMake config files
+[1.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('osp_teleop', 'cmake_prefix_path')
+[1.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.ps1'
+[1.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.dsv'
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.sh'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/bin'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/lib/pkgconfig/osp_teleop.pc'
+[1.590s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/lib/python3.10/site-packages'
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/bin'
+[1.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.ps1'
+[1.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.dsv'
+[1.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.sh'
+[1.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.bash'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.zsh'
+[1.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hasegawa/osp/install/osp_teleop/share/colcon-core/packages/osp_teleop)
+[1.623s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(osp_teleop)
+[1.624s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop' for CMake module files
+[1.624s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop' for CMake config files
+[1.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('osp_teleop', 'cmake_prefix_path')
+[1.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.ps1'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.dsv'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/hook/cmake_prefix_path.sh'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/bin'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/lib/pkgconfig/osp_teleop.pc'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/lib/python3.10/site-packages'
+[1.625s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_teleop/bin'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.ps1'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.dsv'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.sh'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.bash'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/package.zsh'
+[1.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hasegawa/osp/install/osp_teleop/share/colcon-core/packages/osp_teleop)
+[2.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hasegawa/osp/build/osp_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hasegawa/giant/install/aruco_tf:/home/hasegawa/spider/install/aruco_tf:/home/hasegawa/r5sr/install/yolov8_ros:/home/hasegawa/r5sr/install/r5sr_meter_inspection:/home/hasegawa/r5sr/install/r5sr_qr_detecter:/home/hasegawa/r5sr/install/r5sr_emergency_stop:/home/hasegawa/r5sr/install/r5sr_detection_3d:/home/hasegawa/r5sr/install/r5sr_cloud:/opt/ros/humble /usr/bin/cmake /home/hasegawa/osp/src/osp_naive/osp_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hasegawa/osp/install/osp_bringup
+[2.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(osp_bringup)
+[2.018s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup' for CMake module files
+[2.018s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup' for CMake config files
+[2.018s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup/bin'
+[2.019s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup/lib/pkgconfig/osp_bringup.pc'
+[2.019s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup/lib/python3.10/site-packages'
+[2.019s] Level 1:colcon.colcon_core.environment:checking '/home/hasegawa/osp/install/osp_bringup/bin'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_bringup/share/osp_bringup/package.ps1'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hasegawa/osp/install/osp_bringup/share/osp_bringup/package.dsv'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_bringup/share/osp_bringup/package.sh'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_bringup/share/osp_bringup/package.bash'
+[2.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/hasegawa/osp/install/osp_bringup/share/osp_bringup/package.zsh'
+[2.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hasegawa/osp/install/osp_bringup/share/colcon-core/packages/osp_bringup)
+[2.030s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.030s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.030s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.030s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.036s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.036s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.036s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.055s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.056s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hasegawa/osp/install/local_setup.ps1'
+[2.056s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hasegawa/osp/install/_local_setup_util_ps1.py'
+[2.057s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hasegawa/osp/install/setup.ps1'
+[2.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hasegawa/osp/install/local_setup.sh'
+[2.060s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hasegawa/osp/install/_local_setup_util_sh.py'
+[2.060s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hasegawa/osp/install/setup.sh'
+[2.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hasegawa/osp/install/local_setup.bash'
+[2.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hasegawa/osp/install/setup.bash'
+[2.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hasegawa/osp/install/local_setup.zsh'
+[2.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hasegawa/osp/install/setup.zsh'
