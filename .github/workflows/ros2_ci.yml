@@ -29,7 +29,16 @@ jobs:
 
     - name: Install dependencies
       run: apt -y update && apt -y install ssh
-      
+
+    - name: Add GitHub to known hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Disable strict host key checking
+      run: |
+        echo "StrictHostKeyChecking no" >> ~/.ssh/config
+
     - name: Install vcs and additional dependencies
       run: apt -y install python3-vcstool curl
 
