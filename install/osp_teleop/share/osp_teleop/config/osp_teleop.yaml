@@ -1,3 +1,0 @@
-joy:
-  ros__parameters:
-    coalesce_interval_ms: 0.01

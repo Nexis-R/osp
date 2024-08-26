@@ -1,9 +1,0 @@
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/launch/osp_teleop.launch.xml
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/config/osp_teleop.yaml
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/urdf/osp_teleop.urdf
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/urdf/osp_teleop.csv
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/meshes/flipper_1.STL
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/meshes/base_link.STL
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/meshes/flipper_4.STL
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/meshes/flipper_2.STL
-/home/hasegawa/osp/install/osp_teleop/share/osp_teleop/meshes/flipper_3.STL

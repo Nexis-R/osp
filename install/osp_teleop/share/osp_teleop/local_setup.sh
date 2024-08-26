@@ -1,1 +1,0 @@
-/home/hasegawa/osp/build/osp_teleop/ament_cmake_environment_hooks/local_setup.sh
