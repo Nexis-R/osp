@@ -26,8 +26,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        path: src/osp_naive
 
     - name: Install dependencies
       run: apt -y update
@@ -37,12 +35,12 @@ jobs:
 
     - name: Clone external dependencies
       run: |
-        vcs import --input osp/depends.rosinstall --recursive src
+        vcs import --input depends.rosinstall --recursive src
 
     - name: Install ROS dependencies
       run: |
         rosdep update
-        rosdep install -r -y -i --from-paths .
+        rosdep install -r -y -i --from-paths src
 
     - name: Build tests
       id: build_test
