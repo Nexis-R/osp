@@ -37,8 +37,7 @@ jobs:
 
     - name: Clone external dependencies
       run: |
-        vcs import --input depends.rosinstall --recursive src
-
+        vcs import --input osp/depends.rosinstall --recursive src
 
     - name: Install ROS dependencies
       run: |
