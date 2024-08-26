@@ -5,6 +5,10 @@ build
 install
 log
 
+src/dynamixel_h54
+src/epos
+
+
 **/__pycache__/**
 
 rosbag2*
