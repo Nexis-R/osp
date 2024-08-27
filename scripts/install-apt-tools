@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "install tools"
+sudo apt update -qq
+sudo apt install -y -qq python3-vcstool python3-rosdep2 python3-vcstool cu git python3-pip can-utils net-tools openssh-server python3-colcon-common-extensions
+echo "install apt-packages success"

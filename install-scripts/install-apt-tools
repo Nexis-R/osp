@@ -1,6 +1,0 @@
-#!/bin/sh
-
-echo "install tools"
-sudo apt update -qq
-sudo apt install -y -qq python3-vcstool
-echo "install success"

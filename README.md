@@ -15,12 +15,12 @@
 ## 依存関係
 ```bash
 source /opt/ros/humble/setup.bash
-rosdep update
 
 git clone https://github.com/Nexis-R/osp
 cd osp
-./install-scripts/install-all 
+sudo ./scripts/install-all
 vcs import --input depends.rosinstall --recursive src
+rosdep update
 rosdep install -r -y -i --from-paths .
 ```
 
