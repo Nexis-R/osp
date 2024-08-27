@@ -13,4 +13,7 @@
 
   <node name="rviz2" pkg="rviz2" exec="rviz2">
   </node>
+
+  <!-- <node name="foxglove_bridge" pkg="foxglove_bridge" exec="foxglove_bridge">
+  </node> -->
 </launch>
