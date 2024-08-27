@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# .bashrcにエイリアスを追加
+echo "# Nexis-R OSP Robot Setting" >> ~/.bashrc
+
+echo "echo -e \"\\033[0;32mHello Nexis-R ROS2 OSP System \\033[0m\"" >> ~/.bashrc
+echo "echo -e \"\\033[0;32mssh osp-nuc@osp-nuc.local -X \\033[0m\"" >> ~/.bashrc
+
+echo "cd ~/osp" >> ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "source ~/osp/install/setup.bash" >> ~/.bashrc
+
+echo "alias st=''" >> ~/.bashrc
+echo "alias stm=''" >> ~/.bashrc
+
+# .bashrcを再読込
+source ~/.bashrc
+
+echo "Added OSP alias successfully."
+
+exit 0
