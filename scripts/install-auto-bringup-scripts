@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd "$(dirname "$0")"
+
+echo "install auto bringup scripts"
+
+# copy bringup scripts to desktop
+cp setup_data/OspTeleopAuto.desktop ~/Desktop
+cp setup_data/OspRobotAuto.desktop ~/Desktop
+
+echo "install success for bringup scripts"

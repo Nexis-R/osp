@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Start Osp Teleop
+# you should change usr_name (ex:osp-nuc)
+Exec=/home/usr_name/osp/scripts/setup_data/osp_teleop_auto_start.sh
+Icon=/home/usr_name/osp/scripts/setup_data/icons/teleop.png
+Terminal=true
+Categories=Utility;
