@@ -17,6 +17,6 @@ epos:
 
 dynamixel:
   ros__parameters:
-    portname: "/dev/ttyUSB0"
-    baudrate: 115200
+    portname: "/dev/ttyUSB-Dynamixel"
+    baudrate: 1000000
     ids: [2, 3, 4, 5]
