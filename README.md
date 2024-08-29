@@ -19,7 +19,7 @@ cd osp
 # 自動インストールスクリプト
 sudo ./scripts/install-all
 # Desktopアプリの追加スクリプト
-./scripts/install-bringup-scripts
+./scripts/install-auto-bringup-scripts
 vcs import --input depends.rosinstall --recursive src
 rosdep update
 rosdep install -r -y -i --from-paths .
