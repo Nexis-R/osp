@@ -2,6 +2,12 @@
 
 cd "$(dirname "$0")"
 
-echo "install udev rules for usb devices"
-cp rules/99-cameras.rules /etc/udev/rules.d/99-cameras.rules
-cp rules/99-dynamixel-device.rules /etc/udev/rules.d/99-dynamixel-device.rules
+echo "Installing udev rules for USB devices"
+sudo cp rules/99-cameras.rules /etc/udev/rules.d/99-cameras.rules
+sudo cp rules/99-dynamixel-device.rules /etc/udev/rules.d/99-dynamixel-device.rules
+
+echo "Reloading udev rules"
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+
+echo "Udev rules installed and reloaded successfully."
