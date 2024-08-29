@@ -5,3 +5,4 @@ cd "$(dirname "$0")"
 sh ./install-apt-tools
 sh ./install-epos-command-library
 sh ./install-udev-rules
+sh ./install-osp-alias
