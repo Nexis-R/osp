@@ -7,8 +7,6 @@
 
 # 環境構築
 ## 要件
-[![humble][humble-badge]][humble]
-[![ubuntu22][ubuntu22-badge]][ubuntu22]
 - Ubuntu22.04
 - ROS2 Humble
 
@@ -75,4 +73,15 @@ Exec=/home/usr_name/osp/scripts/setup_data/osp_teleop_auto_start.sh
 Icon=/home/usr_name/osp/scripts/setup_data/icons/teleop.png
 Terminal=true
 Categories=Utility;
+```
+### sudoers設定
+bindを自動的に権限を渡す為の設定をする。ターミナル上で実行する
+```bash
+echo "$USER ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/usb/drivers/usb/unbind, /usr/bin/tee /sys/bus/usb/drivers/usb/bind" | sudo tee /etc/sudoers.d/usb_sudo_nopasswd > /dev/null
+```
+
+以下で許可する
+
+```bash
+sudo chmod 0440 /etc/sudoers.d/usb_sudo_nopasswd
 ```
