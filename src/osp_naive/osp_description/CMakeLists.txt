@@ -1,12 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
-project(osp_teleop)
+project(osp_description)
 
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME})
-
-install(DIRECTORY
-  config
+  meshes
+  urdf
+  rviz
   DESTINATION share/${PROJECT_NAME})
 
 find_package(ament_cmake REQUIRED)

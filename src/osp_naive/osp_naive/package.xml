@@ -11,6 +11,8 @@
 
   <exec_depend>osp_bringup</exec_depend>
   <exec_depend>osp_teleop</exec_depend>
+  <exec_depend>osp_description</exec_depend>
+
 
   <export>
     <build_type>ament_cmake</build_type>
