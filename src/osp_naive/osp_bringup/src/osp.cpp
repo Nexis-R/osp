@@ -37,17 +37,15 @@ void Osp::handle_joy(const sensor_msgs::msg::Joy::SharedPtr joy) {
 
   if (joy->buttons.at(4) && joy->buttons.at(5) && joy->buttons.at(0)) {
     std_msgs::msg::Float32 flipper_angle;
-    flipper_angle.set__data(3.05433);
-    
     std_msgs::msg::Float32 negative_flipper_angle;
-    std_msgs::msg::Float32 flipper_zero_point;
+    flipper_angle.set__data(3.05433);
     negative_flipper_angle.set__data(-3.05433);
-    flipper_zero_point.set__data(0.0);
 
     flipper_left_front_pub->publish(flipper_angle);
     flipper_right_front_pub->publish(negative_flipper_angle);
     flipper_left_back_pub->publish(negative_flipper_angle);
     flipper_right_back_pub->publish(flipper_angle);
+    
   } else if (joy->buttons.at(4) && joy->buttons.at(5) && joy->buttons.at(1)) {
     std_msgs::msg::Float32 flipper_angle;
     flipper_angle.set__data(0.0);
