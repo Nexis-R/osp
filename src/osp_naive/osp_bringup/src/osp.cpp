@@ -35,32 +35,25 @@ void Osp::handle_joy(const sensor_msgs::msg::Joy::SharedPtr joy) {
   crawler_left_pub->publish(left_speed);
   crawler_right_pub->publish(right_speed);
 
-  // L1
-  std_msgs::msg::Float32 flipper_speed;
-  std_msgs::msg::Float32 speed_zero;
-  speed_zero.set__data(0.0);
-  flipper_speed.set__data(joy->axes.at(4) * 1.0);
-  if (joy->buttons.at(4)) {
-    flipper_left_front_pub->publish(flipper_speed);
-  } else {
-    flipper_left_front_pub->publish(speed_zero);
-  }
-  // R1
-  if (joy->buttons.at(5)) {
-    flipper_right_front_pub->publish(flipper_speed);
-  } else {
-    flipper_right_front_pub->publish(speed_zero);
-  }
-  // L2
-  if (joy->buttons.at(6)) {
-    flipper_left_back_pub->publish(flipper_speed);
-  } else {
-    flipper_left_back_pub->publish(speed_zero);
-  }
-  // R2
-  if (joy->buttons.at(7)) {
-    flipper_right_back_pub->publish(flipper_speed);
-  } else {
-    flipper_right_back_pub->publish(speed_zero);
+  if (joy->buttons.at(4) && joy->buttons.at(5) && joy->buttons.at(0)) {
+    std_msgs::msg::Float32 flipper_angle;
+    flipper_angle.set__data(3.05433);
+    
+    std_msgs::msg::Float32 negative_flipper_angle;
+    std_msgs::msg::Float32 flipper_zero_point;
+    negative_flipper_angle.set__data(-3.05433);
+    flipper_zero_point.set__data(0.0);
+
+    flipper_left_front_pub->publish(flipper_angle);
+    flipper_right_front_pub->publish(negative_flipper_angle);
+    flipper_left_back_pub->publish(negative_flipper_angle);
+    flipper_right_back_pub->publish(flipper_angle);
+  } else if (joy->buttons.at(4) && joy->buttons.at(5) && joy->buttons.at(1)) {
+    std_msgs::msg::Float32 flipper_angle;
+    flipper_angle.set__data(0.0);
+    flipper_left_front_pub->publish(flipper_angle);
+    flipper_right_front_pub->publish(flipper_angle);
+    flipper_left_back_pub->publish(flipper_angle);
+    flipper_right_back_pub->publish(flipper_angle);
   }
 }
