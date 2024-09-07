@@ -3,15 +3,17 @@
 # .bashrcにエイリアスを追加
 echo "# Nexis-R OSP Robot Setting" >> ~/.bashrc
 
-echo "echo -e \"\\033[0;32mHello Nexis-R ROS2 OSP System \\033[0m\"" >> ~/.bashrc
+echo "echo -e \"\\033[0;32mWelcome to the Nexis-R ROS2 OSP System \\033[0m\"" >> ~/.bashrc
 echo "echo -e \"\\033[0;32mssh osp-nuc@osp-nuc.local -X \\033[0m\"" >> ~/.bashrc
+echo "echo -e \"\\033[0;32mUse 'str' to start the robot program \\033[0m\"" >> ~/.bashrc
+echo "echo -e \"\\033[0;32mUse 'stt' to start the teleoperation program \\033[0m\"" >> ~/.bashrc
 
 echo "cd ~/osp" >> ~/.bashrc
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 echo "source ~/osp/install/setup.bash" >> ~/.bashrc
 
-echo "alias st=''" >> ~/.bashrc
-echo "alias stm=''" >> ~/.bashrc
+echo "alias str='ros2 launch osp_bringup osp_bringup.launch.xml'" >> ~/.bashrc
+echo "alias stt='ros2 launch osp_teleop osp_teleop.launch.xml'" >> ~/.bashrc
 
 # .bashrcを再読込
 source ~/.bashrc

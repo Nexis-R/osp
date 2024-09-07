@@ -38,10 +38,19 @@ source install/setup.bash
 ```bash
 ros2 launch osp_teleop osp_teleop.launch.xml
 ```
+or
+```bash
+stt
+```
+
 
 ### ロボット側NUC PC
 ```bash
 ros2 launch osp_bringup osp_bringup.launch.xml
+```
+or
+```bash
+str
 ```
 
 ## 番外編 (.desktopのユーザー名変更)
