@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # .bashrcにエイリアスを追加
-echo "# Nexis-R OSP Robot Setting" >> ~/.bashrc
+echo "# NuTech-R OSP Robot Setting" >> ~/.bashrc
 
-echo "echo -e \"\\033[0;32mWelcome to the Nexis-R ROS2 OSP System \\033[0m\"" >> ~/.bashrc
+echo "echo -e \"\\033[0;32mWelcome to the NuTech-R ROS2 OSP System \\033[0m\"" >> ~/.bashrc
 echo "echo -e \"\\033[0;32mssh osp-nuc@osp-nuc.local -X \\033[0m\"" >> ~/.bashrc
 echo "echo -e \"\\033[0;32mUse 'str' to start the robot program \\033[0m\"" >> ~/.bashrc
 echo "echo -e \"\\033[0;32mUse 'stt' to start the teleoperation program \\033[0m\"" >> ~/.bashrc

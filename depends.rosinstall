@@ -1,2 +1,2 @@
-- git: {local-name: epos, uri: git@github.com:Nexis-R/epos.git, version: master}
-- git: {local-name: dynamixel_h54, uri: git@github.com:Nexis-R/dynamixel_h54.git, version: master}
+- git: {local-name: epos, uri: git@github.com:NuTech-R/epos.git, version: master}
+- git: {local-name: dynamixel_h54, uri: git@github.com:NuTech-R/dynamixel_h54.git, version: master}

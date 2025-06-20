@@ -14,7 +14,7 @@
 ```bash
 source /opt/ros/humble/setup.bash
 
-git clone https://github.com/Nexis-R/osp
+git clone https://github.com/NuTech-R/osp
 cd osp
 # 自動インストールスクリプト
 sudo ./scripts/install-all
